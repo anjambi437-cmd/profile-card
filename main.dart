@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  // Entry point of the application
+void main() { 
+  
   runApp(const MyApp());
 }
 
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // MaterialApp configures the overall app theme and navigation
+    
     return MaterialApp(
       title: 'Profile Card',
       theme: ThemeData(
@@ -27,7 +27,7 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Scaffold provides the basic material design layout structure
+    
     return Scaffold(
       backgroundColor: Colors.grey[200],
    appBar: AppBar(
@@ -36,10 +36,10 @@ class ProfileScreen extends StatelessWidget {
         foregroundColor: Colors.white,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0), // Consistent padding around the card
+        padding: const EdgeInsets.all(16.0), 
         child: Center(
           child: Card(
-            // Card widget with rounded corners and elevation
+            
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(16),
             ),
@@ -47,10 +47,10 @@ class ProfileScreen extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
-                mainAxisSize: MainAxisSize.min, // Minimizes vertical space usage
+                mainAxisSize: MainAxisSize.min, 
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                // User's full name in bold
+                
                   const Text(
                     'Alice Njambi',
                     style: TextStyle(
@@ -84,7 +84,7 @@ class ProfileScreen extends StatelessWidget {
                   
                   const SizedBox(height: 16),
 
-                  // Row with 3 icon-label pairs for contact details
+                
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 
